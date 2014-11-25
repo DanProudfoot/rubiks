@@ -47,6 +47,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
 }
 
 
@@ -66,7 +67,7 @@ $smallSize: $largeSize/3;
 }
 
 .cube__inner{
-	border: solid 0.3vw rgba(97, 219, 150, 1);
+	border: solid 0.25vw rgba(97, 219, 150, 1);
 	position: absolute;
 	backface-visibility: visible;
   	-webkit-backface-visibility: visible; 
@@ -79,9 +80,38 @@ $smallSize: $largeSize/3;
 	100% {@include transform(rotateY(405deg) rotateX(45deg))}
 }
 
+@include keyframes(border){
+	0% {border: solid 0.25vw rgba(97, 219, 150, 1);}
+	50% {border: solid 0.25vw #F764D9;}
+	100% {border: solid 0.25vw rgba(97, 219, 150, 1);}
+}
+
+@include keyframes(scale){
+	0% {@include transform(scale(1))}
+	100% {@include transform(scale(0.7))}
+}
+
 .trans--rubik-whole{
 	@include transform(rotateY(45deg) rotateX(45deg));
 	-webkit-animation: spinning 5s infinite linear;
+
+	@for $i from 1 through 27{
+		
+		.cuboid__contain:nth-of-type(#{$i}){
+
+			*{
+				-webkit-animation: scale #{$i}s infinite linear;
+			}
+
+			@for $j from 1 through 6{
+				*{
+					-webkit-animation: border #{$i}s infinite linear;
+				}
+			}
+
+
+		}
+	}
 }
 
 
