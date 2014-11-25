@@ -1,0 +1,449 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"h",
+				"height"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"cu",
+				"cuboidTitle"
+			],
+			[
+				"d_",
+				"d_blue"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"background",
+				"background"
+			],
+			[
+				"menu",
+				"menuOverlay"
+			],
+			[
+				"nav",
+				"navItems"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"nt",
+				"nth-of-type"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 734,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.scss",
+			"settings":
+			{
+				"buffer_size": 1049,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/wamp/www/experiments/3dbutton"
+	],
+	"file_history":
+	[
+		"/D/wamp/www/experiments/3dbutton/main.js",
+		"/D/wamp/www/experiments/3dbutton/_functions.scss",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 3/Packages/User/SCSS.sublime-settings",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/wamp/www/danproudfoot/wp-content/themes/dnprdft3/views/front-page.twig",
+		"/D/wamp/www/danproudfoot/wp-content/themes/dnprdft3/css/queries/_1024.scss",
+		"/D/wamp/www/danproudfoot/wp-content/themes/dnprdft3/css/queries/_1280.scss",
+		"/D/wamp/www/danproudfoot/wp-content/themes/dnprdft3/css/queries/_480.scss",
+		"/D/wamp/www/danproudfoot/wp-content/themes/dnprdft3/css/queries/_600.scss",
+		"/D/wamp/www/danproudfoot/wp-content/themes/dnprdft3/css/queries/_768.scss",
+		"/D/wamp/www/danproudfoot/wp-content/themes/dnprdft3/front-page.php",
+		"/D/wamp/www/danproudfoot/wp-content/themes/dnprdft3/css/_functions.scss",
+		"/D/wamp/www/wordpress/wp-config.php",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/parts/shared/footer.php",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/css/queries/_base.scss",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/functions.php",
+		"/D/Users/Dan/Documents/Websites/dnprdft/front-page.php",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/front-page.php",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/parts/shared/header-home.php",
+		"/D/Users/Dan/Documents/Websites/dnprdft/css/poop.css",
+		"/C/Users/Dan/AppData/Local/Temp/7zO19C3.tmp/header.php",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/old/views/base.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/parts/shared/header.php",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/js/site.js",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/index.php",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/old/views/author.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/old/views/front-page.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/comments.php",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/style.css",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/views/single.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/views/index.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/views/front-page.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/views/page.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/views/base.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/single.php",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/views/comment.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/css/theme.scss",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/css/_functions.scss",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/views/html-header.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/css/theme.css",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/.gitignore",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/css/reset.css",
+		"/D/Users/Dan/Documents/Websites/timber-base/css/theme.css",
+		"/D/Users/Dan/Documents/Websites/timber-base/css/theme.scss",
+		"/D/Users/Dan/Documents/Websites/timber-base/style.css",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/css/queries/_480.scss",
+		"/D/Users/Dan/Documents/Websites/dnprdft/style.css",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/views/footer.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/views/404.twig",
+		"/D/wamp/www/wordpress/wp-content/themes/dnprdft3/archive.php",
+		"/D/wamp/www/wordpress/wp-content/themes/beach/css/base.css",
+		"/D/Users/Dan/Documents/Websites/experiments/scroll/style/style.scss",
+		"/D/Users/Dan/Documents/Websites/experiments/scroll/index.html",
+		"/D/wamp/www/wordpress/.htaccess",
+		"/D/wamp/www/wordpress/wp-content/themes/beach/style.css",
+		"/D/Users/Dan/Downloads/MICROSOFT.WINDOWS.8.1.RTM.X64.ENGLISH.DVD-WZT/MICROSOFT.WINDOWS.8.1.RTM.X64.ENGLISH.DVD-WZT.NFO",
+		"/D/Users/Dan/Downloads/MICROSOFT.WINDOWS.8.1.RTM.X64.ENGLISH.DVD-WZT/Windows_8.1_EN-US_x64.ISO.NFO"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\wamp\\www\\wordpress\\wp-content\\themes\\dnprdft3",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"250",
+			"300",
+			"window",
+			"latest",
+			"main",
+			"scale(0.5)",
+			"/1.25",
+			"1.5",
+			"perspe",
+			"per",
+			"	<nav class=\"main-navigation layer--max fixed--right\" role=\"navigation\">\n				<div class=\"nav__button cuboid__contain\">\n					<div class=\"cube cuboid--top\"></div>	\n					<div class=\"cube cuboid--bottom\"></div>\n					<div class=\"cube cuboid--front\">a</div>\n					<div class=\"cube cuboid--back\"></div>\n					<div class=\"cube cuboid--side-1\"></div>\n					<div class=\"cube cuboid--side-2\"></div>\n				</div>	\n\n			</nav>	",
+			"perspec",
+			"scale",
+			"cuboid(",
+			"respond",
+			"comment",
+			"foo",
+			"class=\"content\"",
+			"bar",
+			"comment",
+			"cuboid__pers",
+			"cuboid--title",
+			"%;\n",
+			"95",
+			"25%",
+			"25",
+			"section",
+			"flex",
+			"items",
+			"vh",
+			"$height",
+			"width: $width;",
+			"125,185,232",
+			"33,74,106",
+			"160px",
+			"45rem",
+			"800px",
+			"100",
+			"arguments",
+			"transition",
+			"cube",
+			"@extend",
+			"full-fixed",
+			"fixed",
+			"repeat",
+			"jQuery",
+			"$",
+			"enqueue",
+			"rgba(162,179,193,1) 63%,",
+			"rgba(255,255,255,0.38) 40%",
+			"26%",
+			"	\n",
+			");\n",
+			"border-box",
+			"media",
+			"word-wrap"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1049,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								619,
+								619
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "3dbutton.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"res",
+				"css\\reset.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

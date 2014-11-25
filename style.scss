@@ -1,0 +1,172 @@
+@import "functions";
+@import "reset.css";
+
+
+////////////////////////////////////////////////
+////////////Start cuboid section////////////////
+////////////////////////////////////////////////
+
+.cube{
+	border: solid 8px rgba(#fff,0.5);
+	position: absolute;
+	backface-visibility: visible;
+  	-webkit-backface-visibility: visible; 
+  	@include transition(all 0.3s ease-in-out);
+}
+
+.cuboid--bottom, .cuboid--top{
+	
+	transform-origin:50% 0%;
+}
+
+.cuboid--side-1, .cuboid--side-2{
+	transform-origin: 0% 50%;
+}
+
+.cuboid__transformer{	
+	@include transition(transform 1s ease-in-out);
+	height: 100%;
+	transform-style: preserve-3d;
+}
+
+////////////////////////////////////////////////
+/////////////End cuboid section/////////////////
+////////////////////////////////////////////////
+
+.perspective{
+	@include perspective(100vh);
+}
+
+.container{
+	width: 100%;
+	max-width: 64rem;
+	margin: 0 auto;
+	background: #6495ED;
+	height: 60vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+
+$largeSize: 30vw;
+$smallSize: $largeSize/3;
+
+.rubik{
+	@include cuboid($largeSize, $largeSize, $largeSize);
+}
+
+
+
+.part__cube{
+	position: absolute;
+	transform-style: preserve-3d;
+	@include cuboid($smallSize, $smallSize, $smallSize);
+}
+
+.cube__inner{
+	border: solid 0.3vw rgba(97, 219, 150, 1);
+	position: absolute;
+	backface-visibility: visible;
+  	-webkit-backface-visibility: visible; 
+  	@include transition(all 0.3s ease-in-out);
+}
+
+
+@include keyframes(spinning){
+	0% {@include transform(rotateY(45deg) rotateX(45deg))}
+	100% {@include transform(rotateY(405deg) rotateX(45deg))}
+}
+
+.trans--rubik-whole{
+	@include transform(rotateY(45deg) rotateX(45deg));
+	-webkit-animation: spinning 5s infinite linear;
+}
+
+
+
+
+.cube1{
+	@include transform(translateX(0) translateY(0) translateZ(0));
+}
+.cube2{
+	@include transform(translateX($smallSize) translateY(0) translateZ(0));
+}
+.cube3{
+	@include transform(translateX($smallSize*2) translateY(0) translateZ(0));
+}
+.cube4{
+	@include transform(translateX(0) translateY($smallSize) translateZ(0));
+}
+.cube5{
+	@include transform(translateX($smallSize) translateY($smallSize) translateZ(0));
+}
+.cube6{
+	@include transform(translateX($smallSize*2) translateY($smallSize) translateZ(0));
+}
+.cube7{
+	@include transform(translateX(0) translateY($smallSize*2) translateZ(0));
+}
+.cube8{
+	@include transform(translateX($smallSize) translateY($smallSize*2) translateZ(0));
+}
+.cube9{
+	@include transform(translateX($smallSize*2) translateY($smallSize*2) translateZ(0));
+}
+
+.cube10{
+	@include transform(translateX(0) translateY(0) translateZ(-$smallSize));
+}
+.cube11{
+	@include transform(translateX($smallSize) translateY(0) translateZ(-$smallSize));
+}
+.cube12{
+	@include transform(translateX($smallSize*2) translateY(0) translateZ(-$smallSize));
+}
+.cube13{
+	@include transform(translateX(0) translateY($smallSize) translateZ(-$smallSize));
+}
+.cube14{
+	@include transform(translateX($smallSize) translateY($smallSize) translateZ(-$smallSize));
+}
+.cube15{
+	@include transform(translateX($smallSize*2) translateY($smallSize) translateZ(-$smallSize));
+}
+.cube16{
+	@include transform(translateX(0) translateY($smallSize*2) translateZ(-$smallSize));
+}
+.cube17{
+	@include transform(translateX($smallSize) translateY($smallSize*2) translateZ(-$smallSize));
+}
+.cube18{
+	@include transform(translateX($smallSize*2) translateY($smallSize*2) translateZ(-$smallSize));
+}
+
+.cube19{
+	@include transform(translateX(0) translateY(0) translateZ(-$smallSize*2));
+}
+.cube20{
+	@include transform(translateX($smallSize) translateY(0) translateZ(-$smallSize*2));
+}
+.cube21{
+	@include transform(translateX($smallSize*2) translateY(0) translateZ(-$smallSize*2));
+}
+.cube22{
+	@include transform(translateX(0) translateY($smallSize) translateZ(-$smallSize*2));
+}
+.cube23{
+	@include transform(translateX($smallSize) translateY($smallSize) translateZ(-$smallSize*2));
+}
+.cube24{
+	@include transform(translateX($smallSize*2) translateY($smallSize) translateZ(-$smallSize*2));
+}
+.cube25{
+	@include transform(translateX(0) translateY($smallSize*2) translateZ(-$smallSize*2));
+}
+.cube26{
+	@include transform(translateX($smallSize) translateY($smallSize*2) translateZ(-$smallSize*2));
+}
+.cube27{
+	@include transform(translateX($smallSize*2) translateY($smallSize*2) translateZ(-$smallSize*2));
+}
