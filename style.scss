@@ -11,7 +11,6 @@
 	position: absolute;
 	backface-visibility: visible;
   	-webkit-backface-visibility: visible; 
-  	@include transition(all 0.3s ease-in-out);
 }
 
 .cuboid--bottom, .cuboid--top{
@@ -24,7 +23,6 @@
 }
 
 .cuboid__transformer{	
-	@include transition(transform 1s ease-in-out);
 	height: 100%;
 	transform-style: preserve-3d;
 }
@@ -33,8 +31,35 @@
 /////////////End cuboid section/////////////////
 ////////////////////////////////////////////////
 
+
+
+/////////////////
+//Stuff Section//
+/////////////////
+
 .perspective{
 	@include perspective(100vh);
+}
+
+@include keyframes(spinning){
+	0% {@include transform(rotateY(45deg) rotateX(45deg))}
+	100% {@include transform(rotateY(405deg) rotateX(45deg))}
+}
+
+@include keyframes(background){
+	0% {background: rgba(97, 219, 150, 1);}
+	50% {background:#F764D9;}
+	100% {background: rgba(97, 219, 150, 1);}
+}
+
+@include keyframes(scale){
+	0% {@include transform(scale3d(1,1,1))}
+	50% {@include transform(scale3d(0.7, 0.7, 0.7))}
+}
+
+@include keyframes(bob){
+	0% {@include transform(translateY(0px))}
+	50% {@include transform(translateY(60px))}
 }
 
 .container{
@@ -56,9 +81,9 @@ $smallSize: $largeSize/3;
 
 .rubik{
 	@include cuboid($largeSize, $largeSize, $largeSize);
+	-webkit-animation: bob 5s infinite ease-in-out;
+	transform-style: preserve-3d;
 }
-
-
 
 .part__cube{
 	position: absolute;
@@ -68,6 +93,7 @@ $smallSize: $largeSize/3;
 
 .cube__inner{
 	border: solid 0.25vw rgba(97, 219, 150, 1);
+	background:rgba(97, 219, 150, 1);
 	position: absolute;
 	backface-visibility: visible;
   	-webkit-backface-visibility: visible; 
@@ -75,46 +101,27 @@ $smallSize: $largeSize/3;
 }
 
 
-@include keyframes(spinning){
-	0% {@include transform(rotateY(45deg) rotateX(45deg))}
-	100% {@include transform(rotateY(405deg) rotateX(45deg))}
-}
-
-@include keyframes(border){
-	0% {border: solid 0.25vw rgba(97, 219, 150, 1);}
-	50% {border: solid 0.25vw #F764D9;}
-	100% {border: solid 0.25vw rgba(97, 219, 150, 1);}
-}
-
-@include keyframes(scale){
-	0% {@include transform(scale(1))}
-	100% {@include transform(scale(0.7))}
-}
-
 .trans--rubik-whole{
 	@include transform(rotateY(45deg) rotateX(45deg));
-	-webkit-animation: spinning 5s infinite linear;
+	-webkit-animation: spinning 12s infinite linear;
 
 	@for $i from 1 through 27{
 		
 		.cuboid__contain:nth-of-type(#{$i}){
 
-			*{
-				-webkit-animation: scale #{$i}s infinite linear;
+			.cuboid__transformer{
+
+					-webkit-animation: scale 5s #{$i/10}s infinite linear;
+
+				@for $j from 1 through 6{
+					*{
+						-webkit-animation: background #{$i/($i/1.5)}s #{$i/11}s infinite linear;
+					}
+				}	
 			}
-
-			@for $j from 1 through 6{
-				*{
-					-webkit-animation: border #{$i}s infinite linear;
-				}
-			}
-
-
 		}
 	}
 }
-
-
 
 
 .cube1{

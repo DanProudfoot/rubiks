@@ -3,11 +3,7 @@
   border: solid 8px rgba(255, 255, 255, 0.5);
   position: absolute;
   backface-visibility: visible;
-  -webkit-backface-visibility: visible;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  -webkit-backface-visibility: visible; }
 
 .cuboid--bottom, .cuboid--top {
   transform-origin: 50% 0%; }
@@ -16,10 +12,6 @@
   transform-origin: 0% 50%; }
 
 .cuboid__transformer {
-  -webkit-transition: transform 1s ease-in-out;
-  -moz-transition: transform 1s ease-in-out;
-  -ms-transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
   height: 100%;
   transform-style: preserve-3d; }
 
@@ -29,6 +21,186 @@
   -ms-perspective: 100vh;
   perspective: 100vh; }
 
+@-webkit-keyframes spinning {
+  0% {
+    -webkit-transform: rotateY(45deg) rotateX(45deg);
+    -moz-transform: rotateY(45deg) rotateX(45deg);
+    -ms-transform: rotateY(45deg) rotateX(45deg);
+    transform: rotateY(45deg) rotateX(45deg); }
+
+  100% {
+    -webkit-transform: rotateY(405deg) rotateX(45deg);
+    -moz-transform: rotateY(405deg) rotateX(45deg);
+    -ms-transform: rotateY(405deg) rotateX(45deg);
+    transform: rotateY(405deg) rotateX(45deg); } }
+@-moz-keyframes spinning {
+  0% {
+    -webkit-transform: rotateY(45deg) rotateX(45deg);
+    -moz-transform: rotateY(45deg) rotateX(45deg);
+    -ms-transform: rotateY(45deg) rotateX(45deg);
+    transform: rotateY(45deg) rotateX(45deg); }
+
+  100% {
+    -webkit-transform: rotateY(405deg) rotateX(45deg);
+    -moz-transform: rotateY(405deg) rotateX(45deg);
+    -ms-transform: rotateY(405deg) rotateX(45deg);
+    transform: rotateY(405deg) rotateX(45deg); } }
+@-ms-keyframes spinning {
+  0% {
+    -webkit-transform: rotateY(45deg) rotateX(45deg);
+    -moz-transform: rotateY(45deg) rotateX(45deg);
+    -ms-transform: rotateY(45deg) rotateX(45deg);
+    transform: rotateY(45deg) rotateX(45deg); }
+
+  100% {
+    -webkit-transform: rotateY(405deg) rotateX(45deg);
+    -moz-transform: rotateY(405deg) rotateX(45deg);
+    -ms-transform: rotateY(405deg) rotateX(45deg);
+    transform: rotateY(405deg) rotateX(45deg); } }
+@keyframes spinning {
+  0% {
+    -webkit-transform: rotateY(45deg) rotateX(45deg);
+    -moz-transform: rotateY(45deg) rotateX(45deg);
+    -ms-transform: rotateY(45deg) rotateX(45deg);
+    transform: rotateY(45deg) rotateX(45deg); }
+
+  100% {
+    -webkit-transform: rotateY(405deg) rotateX(45deg);
+    -moz-transform: rotateY(405deg) rotateX(45deg);
+    -ms-transform: rotateY(405deg) rotateX(45deg);
+    transform: rotateY(405deg) rotateX(45deg); } }
+@-webkit-keyframes background {
+  0% {
+    background: #61db96; }
+
+  50% {
+    background: #F764D9; }
+
+  100% {
+    background: #61db96; } }
+@-moz-keyframes background {
+  0% {
+    background: #61db96; }
+
+  50% {
+    background: #F764D9; }
+
+  100% {
+    background: #61db96; } }
+@-ms-keyframes background {
+  0% {
+    background: #61db96; }
+
+  50% {
+    background: #F764D9; }
+
+  100% {
+    background: #61db96; } }
+@keyframes background {
+  0% {
+    background: #61db96; }
+
+  50% {
+    background: #F764D9; }
+
+  100% {
+    background: #61db96; } }
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  50% {
+    -webkit-transform: scale3d(0.7, 0.7, 0.7);
+    -moz-transform: scale3d(0.7, 0.7, 0.7);
+    -ms-transform: scale3d(0.7, 0.7, 0.7);
+    transform: scale3d(0.7, 0.7, 0.7); } }
+@-moz-keyframes scale {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  50% {
+    -webkit-transform: scale3d(0.7, 0.7, 0.7);
+    -moz-transform: scale3d(0.7, 0.7, 0.7);
+    -ms-transform: scale3d(0.7, 0.7, 0.7);
+    transform: scale3d(0.7, 0.7, 0.7); } }
+@-ms-keyframes scale {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  50% {
+    -webkit-transform: scale3d(0.7, 0.7, 0.7);
+    -moz-transform: scale3d(0.7, 0.7, 0.7);
+    -ms-transform: scale3d(0.7, 0.7, 0.7);
+    transform: scale3d(0.7, 0.7, 0.7); } }
+@keyframes scale {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  50% {
+    -webkit-transform: scale3d(0.7, 0.7, 0.7);
+    -moz-transform: scale3d(0.7, 0.7, 0.7);
+    -ms-transform: scale3d(0.7, 0.7, 0.7);
+    transform: scale3d(0.7, 0.7, 0.7); } }
+@-webkit-keyframes bob {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px); }
+
+  50% {
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    transform: translateY(60px); } }
+@-moz-keyframes bob {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px); }
+
+  50% {
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    transform: translateY(60px); } }
+@-ms-keyframes bob {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px); }
+
+  50% {
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    transform: translateY(60px); } }
+@keyframes bob {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px); }
+
+  50% {
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    transform: translateY(60px); } }
 .container {
   width: 100%;
   max-width: 64rem;
@@ -43,7 +215,9 @@
 
 .rubik {
   width: 30vw;
-  height: 30vw; }
+  height: 30vw;
+  -webkit-animation: bob 5s infinite ease-in-out;
+  transform-style: preserve-3d; }
   .rubik .cuboid__transformer {
     transform-origin: 50% 50% -15vw; }
     .rubik .cuboid__transformer .cuboid--bottom {
@@ -133,6 +307,7 @@
 
 .cube__inner {
   border: solid 0.25vw #61db96;
+  background: #61db96;
   position: absolute;
   backface-visibility: visible;
   -webkit-backface-visibility: visible;
@@ -141,522 +316,390 @@
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-@-webkit-keyframes spinning {
-  0% {
-    -webkit-transform: rotateY(45deg) rotateX(45deg);
-    -moz-transform: rotateY(45deg) rotateX(45deg);
-    -ms-transform: rotateY(45deg) rotateX(45deg);
-    transform: rotateY(45deg) rotateX(45deg); }
-
-  100% {
-    -webkit-transform: rotateY(405deg) rotateX(45deg);
-    -moz-transform: rotateY(405deg) rotateX(45deg);
-    -ms-transform: rotateY(405deg) rotateX(45deg);
-    transform: rotateY(405deg) rotateX(45deg); } }
-@-moz-keyframes spinning {
-  0% {
-    -webkit-transform: rotateY(45deg) rotateX(45deg);
-    -moz-transform: rotateY(45deg) rotateX(45deg);
-    -ms-transform: rotateY(45deg) rotateX(45deg);
-    transform: rotateY(45deg) rotateX(45deg); }
-
-  100% {
-    -webkit-transform: rotateY(405deg) rotateX(45deg);
-    -moz-transform: rotateY(405deg) rotateX(45deg);
-    -ms-transform: rotateY(405deg) rotateX(45deg);
-    transform: rotateY(405deg) rotateX(45deg); } }
-@-ms-keyframes spinning {
-  0% {
-    -webkit-transform: rotateY(45deg) rotateX(45deg);
-    -moz-transform: rotateY(45deg) rotateX(45deg);
-    -ms-transform: rotateY(45deg) rotateX(45deg);
-    transform: rotateY(45deg) rotateX(45deg); }
-
-  100% {
-    -webkit-transform: rotateY(405deg) rotateX(45deg);
-    -moz-transform: rotateY(405deg) rotateX(45deg);
-    -ms-transform: rotateY(405deg) rotateX(45deg);
-    transform: rotateY(405deg) rotateX(45deg); } }
-@keyframes spinning {
-  0% {
-    -webkit-transform: rotateY(45deg) rotateX(45deg);
-    -moz-transform: rotateY(45deg) rotateX(45deg);
-    -ms-transform: rotateY(45deg) rotateX(45deg);
-    transform: rotateY(45deg) rotateX(45deg); }
-
-  100% {
-    -webkit-transform: rotateY(405deg) rotateX(45deg);
-    -moz-transform: rotateY(405deg) rotateX(45deg);
-    -ms-transform: rotateY(405deg) rotateX(45deg);
-    transform: rotateY(405deg) rotateX(45deg); } }
-@-webkit-keyframes border {
-  0% {
-    border: solid 0.25vw #61db96; }
-
-  50% {
-    border: solid 0.25vw #F764D9; }
-
-  100% {
-    border: solid 0.25vw #61db96; } }
-@-moz-keyframes border {
-  0% {
-    border: solid 0.25vw #61db96; }
-
-  50% {
-    border: solid 0.25vw #F764D9; }
-
-  100% {
-    border: solid 0.25vw #61db96; } }
-@-ms-keyframes border {
-  0% {
-    border: solid 0.25vw #61db96; }
-
-  50% {
-    border: solid 0.25vw #F764D9; }
-
-  100% {
-    border: solid 0.25vw #61db96; } }
-@keyframes border {
-  0% {
-    border: solid 0.25vw #61db96; }
-
-  50% {
-    border: solid 0.25vw #F764D9; }
-
-  100% {
-    border: solid 0.25vw #61db96; } }
-@-webkit-keyframes scale {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
-
-  100% {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7); } }
-@-moz-keyframes scale {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
-
-  100% {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7); } }
-@-ms-keyframes scale {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
-
-  100% {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7); } }
-@keyframes scale {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
-
-  100% {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7); } }
 .trans--rubik-whole {
   -webkit-transform: rotateY(45deg) rotateX(45deg);
   -moz-transform: rotateY(45deg) rotateX(45deg);
   -ms-transform: rotateY(45deg) rotateX(45deg);
   transform: rotateY(45deg) rotateX(45deg);
-  -webkit-animation: spinning 5s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(1) * {
-    -webkit-animation: scale 1s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(1) * {
-    -webkit-animation: border 1s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(1) * {
-    -webkit-animation: border 1s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(1) * {
-    -webkit-animation: border 1s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(1) * {
-    -webkit-animation: border 1s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(1) * {
-    -webkit-animation: border 1s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(1) * {
-    -webkit-animation: border 1s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(2) * {
-    -webkit-animation: scale 2s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(2) * {
-    -webkit-animation: border 2s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(2) * {
-    -webkit-animation: border 2s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(2) * {
-    -webkit-animation: border 2s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(2) * {
-    -webkit-animation: border 2s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(2) * {
-    -webkit-animation: border 2s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(2) * {
-    -webkit-animation: border 2s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(3) * {
-    -webkit-animation: scale 3s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(3) * {
-    -webkit-animation: border 3s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(3) * {
-    -webkit-animation: border 3s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(3) * {
-    -webkit-animation: border 3s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(3) * {
-    -webkit-animation: border 3s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(3) * {
-    -webkit-animation: border 3s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(3) * {
-    -webkit-animation: border 3s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(4) * {
-    -webkit-animation: scale 4s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(4) * {
-    -webkit-animation: border 4s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(4) * {
-    -webkit-animation: border 4s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(4) * {
-    -webkit-animation: border 4s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(4) * {
-    -webkit-animation: border 4s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(4) * {
-    -webkit-animation: border 4s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(4) * {
-    -webkit-animation: border 4s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(5) * {
-    -webkit-animation: scale 5s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(5) * {
-    -webkit-animation: border 5s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(5) * {
-    -webkit-animation: border 5s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(5) * {
-    -webkit-animation: border 5s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(5) * {
-    -webkit-animation: border 5s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(5) * {
-    -webkit-animation: border 5s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(5) * {
-    -webkit-animation: border 5s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(6) * {
-    -webkit-animation: scale 6s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(6) * {
-    -webkit-animation: border 6s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(6) * {
-    -webkit-animation: border 6s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(6) * {
-    -webkit-animation: border 6s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(6) * {
-    -webkit-animation: border 6s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(6) * {
-    -webkit-animation: border 6s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(6) * {
-    -webkit-animation: border 6s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(7) * {
-    -webkit-animation: scale 7s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(7) * {
-    -webkit-animation: border 7s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(7) * {
-    -webkit-animation: border 7s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(7) * {
-    -webkit-animation: border 7s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(7) * {
-    -webkit-animation: border 7s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(7) * {
-    -webkit-animation: border 7s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(7) * {
-    -webkit-animation: border 7s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(8) * {
-    -webkit-animation: scale 8s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(8) * {
-    -webkit-animation: border 8s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(8) * {
-    -webkit-animation: border 8s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(8) * {
-    -webkit-animation: border 8s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(8) * {
-    -webkit-animation: border 8s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(8) * {
-    -webkit-animation: border 8s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(8) * {
-    -webkit-animation: border 8s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(9) * {
-    -webkit-animation: scale 9s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(9) * {
-    -webkit-animation: border 9s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(9) * {
-    -webkit-animation: border 9s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(9) * {
-    -webkit-animation: border 9s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(9) * {
-    -webkit-animation: border 9s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(9) * {
-    -webkit-animation: border 9s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(9) * {
-    -webkit-animation: border 9s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(10) * {
-    -webkit-animation: scale 10s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(10) * {
-    -webkit-animation: border 10s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(10) * {
-    -webkit-animation: border 10s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(10) * {
-    -webkit-animation: border 10s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(10) * {
-    -webkit-animation: border 10s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(10) * {
-    -webkit-animation: border 10s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(10) * {
-    -webkit-animation: border 10s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(11) * {
-    -webkit-animation: scale 11s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(11) * {
-    -webkit-animation: border 11s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(11) * {
-    -webkit-animation: border 11s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(11) * {
-    -webkit-animation: border 11s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(11) * {
-    -webkit-animation: border 11s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(11) * {
-    -webkit-animation: border 11s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(11) * {
-    -webkit-animation: border 11s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(12) * {
-    -webkit-animation: scale 12s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(12) * {
-    -webkit-animation: border 12s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(12) * {
-    -webkit-animation: border 12s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(12) * {
-    -webkit-animation: border 12s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(12) * {
-    -webkit-animation: border 12s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(12) * {
-    -webkit-animation: border 12s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(12) * {
-    -webkit-animation: border 12s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(13) * {
-    -webkit-animation: scale 13s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(13) * {
-    -webkit-animation: border 13s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(13) * {
-    -webkit-animation: border 13s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(13) * {
-    -webkit-animation: border 13s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(13) * {
-    -webkit-animation: border 13s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(13) * {
-    -webkit-animation: border 13s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(13) * {
-    -webkit-animation: border 13s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(14) * {
-    -webkit-animation: scale 14s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(14) * {
-    -webkit-animation: border 14s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(14) * {
-    -webkit-animation: border 14s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(14) * {
-    -webkit-animation: border 14s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(14) * {
-    -webkit-animation: border 14s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(14) * {
-    -webkit-animation: border 14s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(14) * {
-    -webkit-animation: border 14s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(15) * {
-    -webkit-animation: scale 15s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(15) * {
-    -webkit-animation: border 15s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(15) * {
-    -webkit-animation: border 15s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(15) * {
-    -webkit-animation: border 15s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(15) * {
-    -webkit-animation: border 15s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(15) * {
-    -webkit-animation: border 15s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(15) * {
-    -webkit-animation: border 15s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(16) * {
-    -webkit-animation: scale 16s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(16) * {
-    -webkit-animation: border 16s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(16) * {
-    -webkit-animation: border 16s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(16) * {
-    -webkit-animation: border 16s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(16) * {
-    -webkit-animation: border 16s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(16) * {
-    -webkit-animation: border 16s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(16) * {
-    -webkit-animation: border 16s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(17) * {
-    -webkit-animation: scale 17s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(17) * {
-    -webkit-animation: border 17s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(17) * {
-    -webkit-animation: border 17s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(17) * {
-    -webkit-animation: border 17s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(17) * {
-    -webkit-animation: border 17s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(17) * {
-    -webkit-animation: border 17s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(17) * {
-    -webkit-animation: border 17s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(18) * {
-    -webkit-animation: scale 18s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(18) * {
-    -webkit-animation: border 18s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(18) * {
-    -webkit-animation: border 18s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(18) * {
-    -webkit-animation: border 18s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(18) * {
-    -webkit-animation: border 18s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(18) * {
-    -webkit-animation: border 18s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(18) * {
-    -webkit-animation: border 18s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(19) * {
-    -webkit-animation: scale 19s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(19) * {
-    -webkit-animation: border 19s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(19) * {
-    -webkit-animation: border 19s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(19) * {
-    -webkit-animation: border 19s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(19) * {
-    -webkit-animation: border 19s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(19) * {
-    -webkit-animation: border 19s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(19) * {
-    -webkit-animation: border 19s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(20) * {
-    -webkit-animation: scale 20s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(20) * {
-    -webkit-animation: border 20s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(20) * {
-    -webkit-animation: border 20s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(20) * {
-    -webkit-animation: border 20s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(20) * {
-    -webkit-animation: border 20s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(20) * {
-    -webkit-animation: border 20s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(20) * {
-    -webkit-animation: border 20s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(21) * {
-    -webkit-animation: scale 21s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(21) * {
-    -webkit-animation: border 21s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(21) * {
-    -webkit-animation: border 21s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(21) * {
-    -webkit-animation: border 21s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(21) * {
-    -webkit-animation: border 21s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(21) * {
-    -webkit-animation: border 21s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(21) * {
-    -webkit-animation: border 21s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(22) * {
-    -webkit-animation: scale 22s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(22) * {
-    -webkit-animation: border 22s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(22) * {
-    -webkit-animation: border 22s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(22) * {
-    -webkit-animation: border 22s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(22) * {
-    -webkit-animation: border 22s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(22) * {
-    -webkit-animation: border 22s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(22) * {
-    -webkit-animation: border 22s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(23) * {
-    -webkit-animation: scale 23s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(23) * {
-    -webkit-animation: border 23s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(23) * {
-    -webkit-animation: border 23s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(23) * {
-    -webkit-animation: border 23s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(23) * {
-    -webkit-animation: border 23s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(23) * {
-    -webkit-animation: border 23s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(23) * {
-    -webkit-animation: border 23s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(24) * {
-    -webkit-animation: scale 24s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(24) * {
-    -webkit-animation: border 24s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(24) * {
-    -webkit-animation: border 24s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(24) * {
-    -webkit-animation: border 24s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(24) * {
-    -webkit-animation: border 24s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(24) * {
-    -webkit-animation: border 24s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(24) * {
-    -webkit-animation: border 24s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(25) * {
-    -webkit-animation: scale 25s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(25) * {
-    -webkit-animation: border 25s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(25) * {
-    -webkit-animation: border 25s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(25) * {
-    -webkit-animation: border 25s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(25) * {
-    -webkit-animation: border 25s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(25) * {
-    -webkit-animation: border 25s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(25) * {
-    -webkit-animation: border 25s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(26) * {
-    -webkit-animation: scale 26s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(26) * {
-    -webkit-animation: border 26s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(26) * {
-    -webkit-animation: border 26s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(26) * {
-    -webkit-animation: border 26s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(26) * {
-    -webkit-animation: border 26s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(26) * {
-    -webkit-animation: border 26s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(26) * {
-    -webkit-animation: border 26s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(27) * {
-    -webkit-animation: scale 27s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(27) * {
-    -webkit-animation: border 27s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(27) * {
-    -webkit-animation: border 27s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(27) * {
-    -webkit-animation: border 27s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(27) * {
-    -webkit-animation: border 27s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(27) * {
-    -webkit-animation: border 27s infinite linear; }
-  .trans--rubik-whole .cuboid__contain:nth-of-type(27) * {
-    -webkit-animation: border 27s infinite linear; }
+  -webkit-animation: spinning 12s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(1) .cuboid__transformer {
+    -webkit-animation: scale 5s 0.1s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(1) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(1) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(1) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(1) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(1) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(1) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.09091s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(2) .cuboid__transformer {
+    -webkit-animation: scale 5s 0.2s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(2) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(2) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(2) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(2) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(2) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(2) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.18182s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(3) .cuboid__transformer {
+    -webkit-animation: scale 5s 0.3s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(3) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(3) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(3) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(3) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(3) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(3) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.27273s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(4) .cuboid__transformer {
+    -webkit-animation: scale 5s 0.4s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(4) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(4) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(4) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(4) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(4) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(4) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.36364s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(5) .cuboid__transformer {
+    -webkit-animation: scale 5s 0.5s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(5) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(5) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(5) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(5) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(5) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(5) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.45455s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(6) .cuboid__transformer {
+    -webkit-animation: scale 5s 0.6s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(6) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.54545s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(6) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.54545s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(6) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.54545s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(6) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.54545s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(6) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.54545s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(6) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.54545s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(7) .cuboid__transformer {
+    -webkit-animation: scale 5s 0.7s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(7) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.63636s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(7) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.63636s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(7) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.63636s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(7) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.63636s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(7) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.63636s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(7) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.63636s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(8) .cuboid__transformer {
+    -webkit-animation: scale 5s 0.8s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(8) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.72727s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(8) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.72727s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(8) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.72727s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(8) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.72727s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(8) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.72727s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(8) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.72727s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(9) .cuboid__transformer {
+    -webkit-animation: scale 5s 0.9s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(9) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.81818s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(9) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.81818s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(9) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.81818s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(9) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.81818s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(9) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.81818s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(9) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.81818s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(10) .cuboid__transformer {
+    -webkit-animation: scale 5s 1s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(10) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.90909s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(10) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.90909s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(10) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.90909s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(10) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.90909s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(10) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.90909s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(10) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 0.90909s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(11) .cuboid__transformer {
+    -webkit-animation: scale 5s 1.1s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(11) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(11) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(11) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(11) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(11) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(11) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(12) .cuboid__transformer {
+    -webkit-animation: scale 5s 1.2s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(12) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(12) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(12) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(12) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(12) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(12) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.09091s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(13) .cuboid__transformer {
+    -webkit-animation: scale 5s 1.3s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(13) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(13) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(13) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(13) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(13) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(13) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.18182s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(14) .cuboid__transformer {
+    -webkit-animation: scale 5s 1.4s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(14) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(14) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(14) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(14) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(14) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(14) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.27273s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(15) .cuboid__transformer {
+    -webkit-animation: scale 5s 1.5s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(15) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(15) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(15) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(15) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(15) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(15) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.36364s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(16) .cuboid__transformer {
+    -webkit-animation: scale 5s 1.6s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(16) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(16) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(16) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(16) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(16) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(16) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.45455s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(17) .cuboid__transformer {
+    -webkit-animation: scale 5s 1.7s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(17) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.54545s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(17) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.54545s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(17) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.54545s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(17) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.54545s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(17) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.54545s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(17) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.54545s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(18) .cuboid__transformer {
+    -webkit-animation: scale 5s 1.8s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(18) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.63636s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(18) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.63636s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(18) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.63636s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(18) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.63636s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(18) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.63636s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(18) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.63636s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(19) .cuboid__transformer {
+    -webkit-animation: scale 5s 1.9s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(19) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.72727s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(19) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.72727s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(19) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.72727s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(19) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.72727s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(19) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.72727s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(19) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.72727s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(20) .cuboid__transformer {
+    -webkit-animation: scale 5s 2s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(20) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.81818s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(20) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.81818s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(20) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.81818s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(20) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.81818s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(20) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.81818s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(20) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.81818s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(21) .cuboid__transformer {
+    -webkit-animation: scale 5s 2.1s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(21) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.90909s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(21) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.90909s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(21) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.90909s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(21) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.90909s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(21) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.90909s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(21) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 1.90909s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(22) .cuboid__transformer {
+    -webkit-animation: scale 5s 2.2s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(22) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(22) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(22) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(22) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(22) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(22) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(23) .cuboid__transformer {
+    -webkit-animation: scale 5s 2.3s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(23) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(23) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(23) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(23) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(23) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.09091s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(23) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.09091s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(24) .cuboid__transformer {
+    -webkit-animation: scale 5s 2.4s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(24) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(24) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(24) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(24) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(24) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.18182s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(24) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.18182s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(25) .cuboid__transformer {
+    -webkit-animation: scale 5s 2.5s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(25) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(25) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(25) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(25) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(25) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.27273s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(25) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.27273s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(26) .cuboid__transformer {
+    -webkit-animation: scale 5s 2.6s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(26) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(26) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(26) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(26) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(26) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.36364s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(26) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.36364s infinite linear; }
+  .trans--rubik-whole .cuboid__contain:nth-of-type(27) .cuboid__transformer {
+    -webkit-animation: scale 5s 2.7s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(27) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(27) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(27) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(27) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(27) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.45455s infinite linear; }
+    .trans--rubik-whole .cuboid__contain:nth-of-type(27) .cuboid__transformer * {
+      -webkit-animation: background 1.5s 2.45455s infinite linear; }
 
 .cube1 {
   -webkit-transform: translateX(0) translateY(0) translateZ(0);
